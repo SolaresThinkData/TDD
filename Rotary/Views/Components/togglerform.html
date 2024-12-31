@@ -1,0 +1,1538 @@
+<div class="container mt-5">
+
+    <div class="primary-bg">
+        <p class="p-3 text-white fw-bold">
+            <span class="mx-4">Número de distrito: 2222</span>
+            Estado del distrito: <span style="color: rgb(154, 221, 107);" >
+                
+                Distrito certificado
+            </span>
+        </p>
+    </div>
+    <h2>Solicitud de Subvención Global</h2>
+    <p><b>Todos los campos son obligatorios salvo que se indique que son optativos.</b></p>
+
+    <div class="contenedor">
+
+        <div class="chatbot-container" id="chatbot">
+            <div class="chatbot-header">
+                <h5>Asistente Virtual</h5>
+                <button class="close-chatbot" id="closeChatbot">✖</button>
+            </div>
+            <div class="chatbot-body">
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <p class="bot-message">¡Hola! ¿En qué puedo ayudarte?</p>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="chatbotInput" placeholder="Escribe un mensaje..." />
+                    <button id="sendChatbotMessage">Enviar</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botón del chatbot -->
+        <button id="toggleChatbot" class="chatbot-button">
+            <i class="fa fa-comments"></i>
+        </button>
+
+        
+            
+        
+            <div class="accordion" id="formAccordion">
+            <!-- Bloque 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Paso #1 Información general
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        Contenido del formulario para "Información general".
+                        
+                        <form>
+                            <p class="mt-3 mb-4">
+                                Proporciónanos cierta información básica y asignaremos un número a tu solicitud.
+                            </p>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">
+                                    Indica el nombre del proyecto.
+                                </label>
+                                <input type="text" class="form-control" maxlength="100">
+                                <small class="float-end">0/100 caracteres</small>
+                            </div>
+
+                            <p class="fw-bold">¿Qué tipo de proyecto piensas llevar a cabo?</p>
+                            <p>Marca todas las opciones que correspondan, a fin de determinar qué otros datos se necesitan.</p>
+                            <hr>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1">
+                                <label class="form-check-label"><b>Proyecto humanitario</b></label><br>
+                                <small>Aborda necesidades de la comunidad con resultados mensurables y sostenibles.</small><br>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1">
+                                <label class="form-check-label"><b>Equipo de capacitación profesional</b></label><br>
+                                <small>Mejorar las competencias de la comunidad mediante el financiamiento del viaje de un grupo de profesionales para que capaciten a sus pares locales o adquieran nuevas habilidades.</small> <br>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1">
+                                <label class="form-check-label"><b>Beca</b></label><br>
+                                <small>Financia estudios de postgrado de personas interesadas en seguir una carrera profesional en una de las áreas de interés de Rotary.</small>
+                            </div>
+                            <hr>
+                            <p class="fw-bold">Contactos Principales </p>
+                            <p>+ Añadir contacto</p>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Paso #2 Integrantes del comité
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        <p class="fw-bold">"Integrantes del comite local"</p><span class="float-end">
+
+                        </span>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Club</th>
+                                <th scope="col">Distrito</th>
+                                <th scope="col">Papel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> + Añadir contacto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="fw-bold">"Integrantes del comite internacional"</p><span class="float-end">
+
+                    </span>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Club</th>
+                            <th scope="col">Distrito</th>
+                            <th scope="col">Papel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> + Añadir contacto</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label">
+                        ¿Existe entre los integrantes del comité algún posible conflicto de interés?
+                    </label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="papel" id="local" value="0">
+                        <label class="form-check-label" for="local">No</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="papel" id="local" value="0">
+                        <label class="form-check-label" for="local">Si</label>
+                    </div>
+                </div>
+
+                <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                    <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                    <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                    <a class="btn btn-link" href="#">Salir</a>
+                </div>
+
+
+                </div>
+            </div>
+            <!-- Bloque 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #3 Panorama general del proyecto
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label for="textarea" class="form-label">
+                                Háblanos sobre el proyecto. Cuáles son sus objetivos principales y quiénes serán sus beneficiarios 
+                                <span class="float-end">
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </span>
+                            </label>
+                            <textarea class="form-control" id="textarea" rows="5"></textarea>
+                        </div>
+                
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                            
+                            <!-- Botón Mejorar con IA -->
+                            <button class="btn ai-btn align-items-center gap-2" type="button" id="toggleAIOptions">
+                                <i class="fas fa-magic"></i> Mejorar con IA
+                            </button>
+                        </div>
+                
+                        <!-- Opciones desplegables -->
+                        <div class="mt-3" id="aiOptions" style="display: none;">
+                            <button class="btn btn-outline-secondary w-100 mb-2">Opción 1</button>
+                            <button class="btn btn-outline-secondary w-100 mb-2">Opción 2</button>
+                            <button class="btn btn-outline-secondary w-100">Más opciones</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <!-- Bloque 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #4 Áreas de interés
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                       
+                        <form>
+
+                            <p class="fw-bold">¿A qué áreas de interés pertenece el proyecto?</p>
+                            <p> Selecciona al menos un área. Te pediremos que establezcas metas y respondas a ciertas preguntas para cada área de interés que selecciones. </p>
+
+                            <span class="float-end">
+                                <i class="fa-regular fa-circle-question"></i>
+                            </span>
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Paz y prevención de conflictos</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Prevención y tratamiento de enfermedades</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Agua, saneamiento e higiene</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Salud materno-infantil</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Alfabetización y educación básica</label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Desarrollo económico de la comunidad</label>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="step-4-checks">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" name="input1" value="1"></input>
+                                    <label class="form-check-label" for="input1"> Medio ambiente</label>
+                                </div>
+                                
+                            </div>
+
+
+                        </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #5 Medición del éxito
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+
+                        <form><div class="step-5-checks">
+                            <div>
+                                <h3>Alfabetización y educación basica</h3>
+                                <p class="fw-bold">¿Qué metas de esta área de interés apoya el proyecto?</p>
+                                <p>Selecciona todas las que correspondan. Te haremos preguntas sobre las que selecciones y, a la conclusión del proyecto, presentarás un informe con los resultados alcanzados en cada una de ellas.  <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                                <hr>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" value="55_1">
+                                    <label class="form-check-label">Apoyar programas destinados a fortalecer la capacidad de las comunidades para proporcionar educación básica y alfabetización a todos sus integrantes.</label>
+                                </div>
+                                <div class="form-check mb-3"><input class="form-check-input" type="checkbox" value="55_2"><label class="form-check-label">Aumentar el nivel de alfabetización de los adultos.</label></div>
+                                <div class="form-check mb-3"><input class="form-check-input" type="checkbox" value="55_3"><label class="form-check-label">Trabajar para reducir la disparidad educativa entre los géneros.</label></div>
+                                <div class="form-check mb-3"><input class="form-check-input" type="checkbox" value="55_4"><label class="form-check-label">Financiar becas de postgrado para profesionales en campos relacionados con la alfabetización y la educación básica.</label></div>
+                                <div>
+                                    <hr>
+                                    <p class="fw-bold">¿Cómo medirás el impacto del proyecto? Para más información, consulta la publicación <a href="https://www.rotary.org/myrotary/es/document/global-grant-monitoring-and-evaluation-plan-supplement">Suplemento - Plan de monitoreo y evaluación de Subvenciones Globales</a>. Como parte de la solicitud, deberás incluir al menos una medida estandarizada de las incluidas en el menú desplegable.</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Medida</th>
+                                                <th scope="col">Método para obtener la información</th>
+                                                <th scope="col">Frecuencia</th>
+                                                <th scope="col">Beneficiarios</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#!" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#modalStep55">+ Añadir medida</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mb-3"><label class="form-label">¿Ya sabes quíen recopilará la información necesario para la evaluación y el monitoreo?</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="evaluation_step5" value="1">
+                                    <label class="form-check-label">Si</label></div><div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="evaluation_step5" value="0">
+                                        <label class="form-check-label">No</label>
+                                    </div>
+                            </div>
+                            <div class="my-3">
+                                <div class="mb-3">
+                                    <label class="form-label">Nombre de la empresa u organización</label>
+                                    <input type="text" class="form-control"></div><div class="mb-3">
+                                        <label for="textarea" class="form-label">Explica brevemente por qué esta persona u organización están capacitadas para realizar esta tarea.</label>
+                                        <textarea class="form-control" id="textarea" rows="5"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="modalStep55" tabindex="-1" aria-labelledby="modalStep55Label" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-lg"><div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="modalStep55Label">Patrocinadores local</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body"><div class="row"><div class="col-6"><label for="" class="form-label">Medida</label><select class="form-select" id="measure" aria-label="Default select example">
+                                            <option selected="" value="Número de niños beneficiados en edad escolar">Número de niños beneficiados en edad escolar</option>
+                                            <option value="Número de nuevos estudiantes en edad escolar.">Número de nuevos estudiantes en edad escolar.</option>
+                                            <option value="Número de nuevas niñas estudiantes en edad escolar.">Número de nuevas niñas estudiantes en edad escolar.</option>
+                                            <option value="Número de profesores recibiendo entrenamiento en educación de adultos.">Número de profesores recibiendo entrenamiento en educación de adultos.</option>
+                                            <option value="Número de adultos recibiendo entrenamiento en alfabetización.">Número de adultos recibiendo entrenamiento en alfabetización.</option>
+                                            <option value="Número de instituciones participando en el programa.">Número de instituciones participando en el programa.</option>
+                                            <option value="Número de adultos usando nuevas habilidades de alfabetización .">Número de adultos usando nuevas habilidades de alfabetización .</option>
+                                            <option value="Número de nuevos puestos docentes creados.">Número de nuevos puestos docentes creados.</option><option value="Otros">Otros</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6"><label for="" class="form-label">Método para obtener la información</label>
+                                        <select class="form-select" id="method" aria-label="Default select example">
+                                            <option selected="" value="Observación directa">Observación directa</option>
+                                            <option value="Grupos de enfoque/entrevistas">Grupos de enfoque/entrevistas</option>
+                                            <option value="Registros e informes de subvenciones">Registros e informes de subvenciones</option>
+                                            <option value="Registros Públicos">Registros Públicos</option>
+                                            <option value="Imágenes de satélite">Imágenes de satélite</option>
+                                            <option value="Encuestas/cuestionarios">Encuestas/cuestionarios</option>
+                                            <option value="Pruebas">Pruebas</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="" class="form-label">Frecuencia</label>
+                                        <select class="form-select" id="frecuencie" aria-label="Default select example">
+                                            <option selected="" value="Semanal">Semanal</option>
+                                            <option value="Cada dos semanas">Cada dos semanas</option>
+                                            <option value="Cada mes">Cada mes</option><option value="Cada dos meses">Cada dos meses</option>
+                                            <option value="Cada tres meses">Cada tres meses</option>
+                                            <option value="Cada cuatro meses">Cada cuatro meses</option>
+                                            <option value="Cada seis meses">Cada seis meses</option>
+                                            <option value="Cada Año">Cada Año</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="" class="form-label">Beneficiarios</label>
+                                        <select class="form-select" id="benefits" aria-label="Default select example">
+                                            <option selected="" value="1-19">1-19</option>
+                                            <option value="20-49">20-49</option>
+                                            <option value="50-99">50-99</option>
+                                            <option value="100-499">100-499</option>
+                                            <option value="500-999">500-999</option>
+                                            <option value="1000-2499">1000-2499</option>
+                                            <option value="2500+">2500+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                            </div></div></div></div></div></div></form>
+                        
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #6 Sede y fechas
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+
+                        <form><h4>Proyecto humanitario</h4>
+                            <p class="fw-bold">¿Dónde se llevará a cabo el proyecto?</p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Ciudad o localidad</label>
+                                        <input type="text" name="project_name" class="form-control" id="name">
+                                    </div></div>
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Estado, provincia o departamento (optativo)</label>
+                                            <input type="text" name="project_name" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">País</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AX">land Islands</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">AndorrA</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AI">Anguilla</option>
+                                        <option value="AQ">Antarctica</option>
+                                        <option value="AG">Antigua and Barbuda</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AW">Aruba</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BS">Bahamas</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BY">Belarus</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BZ">Belize</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BM">Bermuda</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BA">Bosnia and Herzegovina</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BV">Bouvet Island</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="IO">British Indian Ocean Territory</option>
+                                        <option value="BN">Brunei Darussalam</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="KY">Cayman Islands</option>
+                                        <option value="CF">Central African Republic</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CX">Christmas Island</option>
+                                        <option value="CC">Cocos (Keeling) Islands</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CG">Congo</option>
+                                        <option value="CD">Congo, The Democratic Republic of the</option>
+                                        <option value="CK">Cook Islands</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="CI">Cote D"Ivoire</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DM">Dominica</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="GQ">Equatorial Guinea</option>
+                                        <option value="ER">Eritrea</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FK">Falkland Islands (Malvinas)</option>
+                                        <option value="FO">Faroe Islands</option>
+                                        <option value="FJ">Fiji</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="GF">French Guiana</option>
+                                        <option value="PF">French Polynesia</option>
+                                        <option value="TF">French Southern Territories</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GI">Gibraltar</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GL">Greenland</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GP">Guadeloupe</option>
+                                        <option value="GU">Guam</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GG">Guernsey</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GW">Guinea-Bissau</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HM">Heard Island and Mcdonald Islands</option>
+                                        <option value="VA">Holy See (Vatican City State)</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IS">Iceland</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IR">Iran, Islamic Republic Of</option>
+                                        <option value="IQ">Iraq</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="IM">Isle of Man</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JE">Jersey</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakhstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KI">Kiribati</option>
+                                        <option value="KP">Korea, Democratic People"S Republic of</option>
+                                        <option value="KR">Korea, Republic of</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgyzstan</option>
+                                        <option value="LA">Lao People"S Democratic Republic</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LS">Lesotho</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libyan Arab Jamahiriya</option>
+                                        <option value="LI">Liechtenstein</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MO">Macao</option>
+                                        <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MH">Marshall Islands</option>
+                                        <option value="MQ">Martinique</option>
+                                        <option value="MR">Mauritania</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="YT">Mayotte</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="FM">Micronesia, Federated States of</option>
+                                        <option value="MD">Moldova, Republic of</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MS">Montserrat</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="MM">Myanmar</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NR">Nauru</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="AN">Netherlands Antilles</option>
+                                        <option value="NC">New Caledonia</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NU">Niue</option>
+                                        <option value="NF">Norfolk Island</option>
+                                        <option value="MP">Northern Mariana Islands</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PW">Palau</option>
+                                        <option value="PS">Palestinian Territory, Occupied</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PN">Pitcairn</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="PR">Puerto Rico</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="RE">Reunion</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russian Federation</option>
+                                        <option value="RW">RWANDA</option>
+                                        <option value="SH">Saint Helena</option>
+                                        <option value="KN">Saint Kitts and Nevis</option>
+                                        <option value="LC">Saint Lucia</option>
+                                        <option value="PM">Saint Pierre and Miquelon</option>
+                                        <option value="VC">Saint Vincent and the Grenadines</option>
+                                        <option value="WS">Samoa</option>
+                                        <option value="SM">San Marino</option>
+                                        <option value="ST">Sao Tome and Principe</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Serbia</option>
+                                        <option value="SC">Seychelles</option>
+                                        <option value="SL">Sierra Leone</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="SB">Solomon Islands</option>
+                                        <option value="SO">Somalia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SR">Suriname</option>
+                                        <option value="SJ">Svalbard and Jan Mayen</option>
+                                        <option value="SZ">Swaziland</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SY">Syrian Arab Republic</option>
+                                        <option value="TW">Taiwan, Province of China</option>
+                                        <option value="TJ">Tajikistan</option>
+                                        <option value="TZ">Tanzania, United Republic of</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TL">Timor-Leste</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TK">Tokelau</option>
+                                        <option value="TO">Tonga</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="TM">Turkmenistan</option>
+                                        <option value="TC">Turks and Caicos Islands</option>
+                                        <option value="TV">Tuvalu</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UM">United States Minor Outlying Islands</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VU">Vanuatu</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="VN">Viet Nam</option>
+                                        <option value="VG">Virgin Islands, British</option>
+                                        <option value="VI">Virgin Islands, U.S.</option>
+                                        <option value="WF">Wallis and Futuna</option>
+                                        <option value="EH">Western Sahara</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </div>
+                                <p class="fw-bold">¿Cuándo se llevará a cabo el proyecto?</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Fecha de inicio</label>
+                                            <input type="date" placeholder="dd/mm/yyyy" name="start_date" class="form-control" id="start_date">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Fecha de finalización</label>
+                                            <input type="date" placeholder="dd/mm/yyyy" name="end_date" class="form-control" id="end_date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #7 Participantes
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        
+                        <form>
+                            <p class="fw-bold text-uppercase">Organizadores y colaboradoras (OPTATIVO) <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Sitio web</th>
+                                        <th scope="col">Dirección</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td> <a href="#!" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#modalStep7">+ Agregar organización</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">¿Tiene alguno de los integrantes del comité un posible conflicto de interés con una de las organizaciones colaboradoras?</label>
+                                <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="papel" id="has_interes_conflict" value="1"><label class="form-check-label" for="has_interes_conflict">Si</label>
+                                </div>
+                                <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="papel" id="has_interes_conflict" value="0"><label class="form-check-label" for="has_interes_conflict">No</label>
+                                </div>
+                            </div>
+                            <div class="mb-3"><label for="textarea" class="form-label">¿Por qué decidiste colaborar con esta organización y qué papel desempeñará? <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></label>
+                                <textarea class="form-control" id="textarea" rows="5">     
+                                </textarea>
+                            </div>
+                            <p class="fw-bold text-uppercase">Colaboradores (OPTATIVO)</p>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label">Indica los demás colaboradores que participarán en este proyecto <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></label>
+                                <textarea class="form-control" id="textarea" rows="5">
+                                </textarea>
+                            </div>
+                            <p class="fw-bold text-uppercase">VIAJEROS VOLUNTARIOS (OPTATIVO)</p>
+                            <div class="mb-3">
+                                <p>Las subvenciones para proyectos humanitarios pueden financiar los viajes de un máximo de dos personas para que proporcionen capacitación o contribuyan a la implementación del proyecto (siempre que en el ámbito 
+                                    local no pudieran encontrarse personas con tales competencias). Cargar un currículum para cada viajero voluntario. No incluyas datos personales confidenciales, como números de identificación gubernamentales, religión, raza, información de salud, etc. Eres responsable de informar a los viajeros voluntarios sobre los datos personales que has proporcionado sobre ellos a Rotary y de que serán procesados de conformidad con la <a href="https://my.rotary.org/es/privacy-policy">política de privacidad</a> de Rotary.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Correo electrónico</th>
+                                            <th scope="col">Nacionalidad</th>
+                                            <th scope="col">¿Es socio?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#!" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#modalStep72">+ Agregar viajero</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="fw-bold text-uppercase">Participantes de rotary</p><div class="mb-3"><label for="textarea" class="form-label">Describe el papel que desempeñarán los patrocinadores locales en el proyecto:</label><textarea class="form-control" id="textarea" rows="5">
+
+                            </textarea>
+                        </div>
+                        <div class="mb-3"><label for="textarea" class="form-label">Describe el papel que desempeñarán los patrocinadores internacionales en el proyecto:</label><textarea class="form-control" id="textarea" rows="5">
+                        </textarea>
+                    </div>
+                </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #8 Gastos del proyecto
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        
+                        <form>
+                            <p class="fw-bold">Indica qué moneda se utilizará en el presupuesto del proyecto</p>
+                            <p>La moneda que selecciones deberá ser la que utilices para la mayoría de los gastos del proyecto. <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Moneda local</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected="" value="USD">USD</option>
+                                            <option value="EUR">EUR</option>
+                                            <option value="CLP">CLP</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="exchange_rate" class="form-label"><a href="#!">Tipo de cambio</a> (por dólar estadounidense)</label>
+                                        <input type="number" class="form-control" id="exchange_rate"><small>Guardado el 18/01/2023</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="fw-bold">Presupuesto de la subvención</p>
+                            <p>Indica todos los rubros del presupuesto. El presupuesto total debe coincidir con el monto de los fondos el cual se calculará en el noveno paso. Por tal motivo, los presupuestos de las subvenciones, 
+                                incluida la aportación del Fondo Mundial, deberán ser al menos US$ 30.000. <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                                
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Categoría</th>
+                                                <th scope="col">Descripción</th>
+                                                <th scope="col">Proveedor</th>
+                                                <th scope="col">Costo en USD</th>
+                                                <th scope="col">Costo en US$</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option disabled="">--Selecciona una opción--</option>
+                                                        <option value="Accommodation">Alojamiento</option>
+                                                        <option value="Equipos">Equipos</option>
+                                                        <option value="Monitoreo / evaluación">Monitoreo / evaluación</option>
+                                                        <option value="Operaciones">Operaciones</option>
+                                                        <option value="Personal">Personal</option>
+                                                        <option value="Administración de proyecto">Administración de proyecto</option>
+                                                        <option value="Publicidad">Publicidad</option>
+                                                        <option value="Señalización">Señalización</option>
+                                                        <option value="Suministros">Suministros</option>
+                                                        <option value="Entrenamiento">Entrenamiento</option>
+                                                        <option value="Viajes">Viajes</option>
+                                                        <option value="Matrícula">Matrícula</option>
+                                                </select>
+                                                </td>
+                                                <td><input type="text" name="" id=""></td><td><input type="text" name="" id=""></td>
+                                                <td><input type="number" min="0" name="" id=""></td>
+                                                <td><label for="">0</label></td><td><div class="d-flex justify-content-between w-100">
+                                                    <button type="button"><i class="fa-solid fa-circle-xmark"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="7"><button type="button">+ Añadir gasto</button></td>
+                                        </tr>
+                                        <tr class="table-light">
+                                            <td colspan="4"><span class="float-end">Presupuesto total:</span></td>
+                                            <td>0</td>
+                                            <td colspan="2">1</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <d class="d-flex justify-content-start gap-3 mt-4">
+                            </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #9 Financiación
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        
+                        <form>
+                            <p class="fw-bold">Háblanos sobre los fondos que has conseguido para el proyecto. Utilizaremos esta información para calcular la máxima aportación de contrapartida que podrías recibir del Fondo Mundial.</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Fuente</th>
+                                            <th scope="col">Detalles</th>
+                                            <th scope="col">Monto (en USD$)</th>
+                                            <th scope="col">Apoyo*</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><div class="d-flex justify-content-between w-100"><a data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#modalStep9" style="cursor: pointer;"><i class="fa-solid fa-pen text-secondary"></i></a><a style="cursor: pointer;"><i class="fa-solid fa-circle-xmark text-secondary ms-2"></i></a>
+                                            </div></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="7"><a href="#!" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" data-bs-toggle="modal" data-bs-target="#modalStep9">+ Agregar fuente de financiamiento</a></td>
+                                        </tr>
+                                    </tfoot>
+                                    <caption>* Cada vez que se realice una contribución en efectivo a un proyecto financiado por una Subvención Global, deberá añadirse 5 por ciento adicional para cubrir los gastos asociados con el procesamiento de dichos fondos. Los clubes y distritos recibirán los puntos para el reconocimiento Socio Paul Harris que correspondan a este cargo adicional.</caption>
+                                </table>
+                            </div>
+                            <p class="fw-bold">¿Cuál es el monto del Fondo Mundial que te gustaría recibir para este proyecto? <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                            <div class="bg-light p-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="tw-bold">Puedes solicitar hasta 0.00 US$ del Fondo Mundial.</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control">
+                                        <div class="invalid-feedback">La cantidad que solicitaste supera el monto disponible.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="fw-bold">Resumen de la financiación <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                            <div class="alert alert-warning d-flex align-items-center" role="alert"><i class="fa-solid fa-circle-exclamation"></i>
+                                <div class="ms-3">
+                                    <span class="text-uppercase">:</span>
+                                    <br> El total financiado de este proyecto no coincide con el presupuesto total.
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col">
+                                </div>
+                                <div class="col">
+                                    <table class="w-100">
+                                        <tr>
+                                            <td class="text-end">Contribuciones procedentes del FDD:</td>
+                                            <td class="text-end">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end">Contribuciones en efectivo:</td>
+                                            <td class="text-end">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end">Fondo mundial:</td>
+                                            <td class="text-end">0.00</td>
+                                        </tr>
+                                        <tr class="p-3">
+                                            <td class="text-end fw-bold my-3">Total de fondos:</td>
+                                            <td class="text-end">0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-end">Presupuesto total:</td>
+                                            <td class="text-end">0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #10 Sostenibilidad
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        
+                        <form>
+                            <p class="fw-bold">Los proyectos sostenibles ofrecen soluciones a largo plazo a los problemas que enfrenta una comunidad. Para que un proyecto sea sostenible, 
+                                los integrantes de la comunidad deberán mantener por si mismos las actividades del proyecto una vez se agoten los fondos de la subvención. Tus respuestas 
+                                a las preguntas que se incluyen a continuación nos ayudarán a determinar qué elementos del proyecto lo hacen sostenible.</p>
+                                <h4>PROYECTOS HUMANITARIOS</h4>
+                                <p class="fw-bold">Planificaión del proyecto</p>
+                                <hr>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">Describe las necesidades de la comunidad que abordará el proyecto.</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">¿Qué proceso se siguió para determinar estas necesidades?</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">¿Cómo participaron los integrantes de la comunidad beneficiaria en la búsqueda de soluciones?</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">¿Qué participación tuvieron los integrantes de la comunidad local en la planificación del proyecto?</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <p class="fw-bold">Implementación del proyecto</p>
+                                <hr>
+                                <p class="fw-bold">Resume cada etapa de la implementación del proyecto.</p>
+                                <small>Do not include sensitive personal data, such as government ID numbers, religion, race, health information, etc. If you include personal data, you are responsible for informing those whose personal data is included that you are providing it to Rotary and that it will be processed in accordance with Rotary's Privacy Policy.</small>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"># Actividad</th>
+                                            <th scope="col">Duración</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control"></td><td><input type="text" class="form-control"></td>
+                                            <td>
+                                                <div class="d-flex justify-content-between w-100">
+                                                    <button type="button" data-id="1"><i class="fa-solid fa-circle-xmark"></i></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="7">
+                                                <button type="button">+ Agregar actividad</button>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">¿Trabajarás en coordinación con otras iniciativas afines que estuvieran en marcha en la comunidad?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="coo_work_yes" value="1">
+                                        <label class="form-check-label" for="coo_work_yes">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="coo_work_no" value="0">
+                                        <label class="form-check-label" for="coo_work_no">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">Describe los programas de capacitación, educación o divulgación a la comunidad que abarcará el proyecto.</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">¿Qué proceso se siguió para determinar las necesidades?</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">¿Qué incentivos (por ejemplo: compensación económica, premios, certificaciones o publicidad) se utilizarán para animar a los integrantes de la comunidad a participar en el proyecto?</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">Ingresa el nombre de los integrantes o grupos de la comunidad que supervisarán las actividades del proyecto una vez concluidas las actividades financiadas con la subvención.</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <h4>PRESUPUESTO</h4>
+                                <div class="mb-3"><label for="name" class="form-label">¿Usarás proveedores locales para adquirir los equipos y materiales presupuestados?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="use_providers_yes" value="1">
+                                        <label class="form-check-label" for="use_providers_yes">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="use_providers_no" value="0">
+                                        <label class="form-check-label" for="use_providers_no">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">¿Se utilizó un proceso de licitación para seleccionar a los proveedores?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="use_tender_yes" value="1">
+                                        <label class="form-check-label" for="use_tender_yes">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="use_tender_no" value="0"><label class="form-check-label" for="use_tender_no">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">¿Tiene alguno de los integrantes del comité un posible conflicto de interés con alguno de los proveedores?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="has_conflict_providers_yes" value="1">
+                                        <label class="form-check-label" for="has_conflict_providers_yes">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="has_conflict_providers_no" value="0">
+                                        <label class="form-check-label" for="has_conflict_providers_no">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">Si el proyecto incluye la adquisición de equipos o materiales, proporciona el plan de operación y mantenimiento. El plan deberá indicar quiénes estarán a cargo de operar y brindar mantenimiento a los equipos y la capacitación que recibirán</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3"><label for="txtarea1" class="form-label">Describe como los integrantes de la comunidad brindarán mantenimiento a los equipos una vez concluidas las actividades de la subvención. ¿Podrán encontrarse repuestos?</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Si se utilizarán fondos de la subvención para adquirir equipos, ¿serán éstos adecuados al entorno cultural y los estándares tecnológicos de la comunidad?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="local" value="1"><label class="form-check-label" for="local">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="internacional" value="0">
+                                        <label class="form-check-label" for="internacional">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">Una vez completado el proyecto, ¿a quién pertenecerán los artículos adquiridos con los fondos de la subvención? Ningún artículo podrá ser propiedad de un distrito, club o socio.</label>
+                                    <textarea class="form-control" id="txtarea1" rows="4">
+                                    </textarea>
+                                </div>
+                                <h4>FINANCIACIÓN</h4>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">¿Incluye tu proyecto actividades de microcrédito?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="local" value="1">
+                                        <label class="form-check-label" for="local">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="internacional" value="0">
+                                        <label class="form-check-label" for="internacional">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">¿Cuentas con una fuente de financiación local para mantener los resultados del proyecto a largo plazo? </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="local" value="1">
+                                        <label class="form-check-label" for="local">Si</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="internacional" value="0">
+                                        <label class="form-check-label" for="internacional">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txtarea1" class="form-label">¿Generará algún elemento del proyecto ingresos que se destinarán a financiar el proyecto a largo plazo? De ser así, explica.</label>
+                                    <textarea class="form-control" id="txtarea1" rows="5">
+                                    </textarea>
+                                </div>
+                            </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Docs justificantes -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="JustDocs">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocs" aria-expanded="false" aria-controls="collapseThree">
+                        Documentos justificantes
+                    </button>
+                </h2>
+                <div id="collapseDocs" class="accordion-collapse collapse" aria-labelledby="JustDocs" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        
+                        <form>
+                            <p class="fw-bold text-uppercase">Documentos justificantes <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                            <table class="w-100">
+                                <tr>
+                                    <td>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Agregar archivo</label>
+                                                <input class="form-control w-100" type="file" multiple="" id="formFile">
+                                            </div>
+                                            <button type="button" class="btn btn-primary float-start mt-3 ms-4 align-self-center">Cargar archivo</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="fw-bold mt-3">Documentos ya cargados <span class="float-end"><i class="fa-regular fa-circle-question"></i></span></p>
+                            <table class="w-100" id="documentsTable">
+                            </table>
+                            <button class="btn btn-link mt-3 mb-4 text-danger" type="button" disabled=""><i class="fa-solid fa-circle-xmark"></i> Borrar los archivos seleccionados</button>
+                        </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #11 Repaso y bloqueo de la solicitud
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+                        
+                        <form>
+                            <div>
+                                <p>Tras responder a las preguntas, llegó el momento de completar la solicitud. Sin embargo, antes de remitirla a La Fundación Rotaria, todavía deben completarse algunos pasos.</p>
+                                <section class="py-5 tline">
+                                    <ul class="timeline-with-icons">
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa fa-check text-primary fa-2x"></i></span><h5 class="fw-bold">Repaso</h5><p class="text-muted">Repasa todas las respuestas de la solicitud para asegurarte de que la información sea correcta. Para facilitar tu labor, descarga una versión de la solicitud en formato PDF en la que podrás ver todas tus respuestas.</p></li>
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa fa-lock text-primary fa-2x"></i></span><h5 class="fw-bold">Bloqueo de la solicitud</h5><p class="text-muted">Tras repasar la solicitud, bloquéala. Esto cambiará su estatus de Borrador a Pendiente de autorización e impedirá que puedan modificarse tus respuestas.</p></li>
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa-regular fa-thumbs-up text-primary fa-2x"></i></span><h5 class="fw-bold">Autorización y acuerdos legales</h5><p class="text-muted">Tanto tú como las personas encargadas de autorizar la solicitud repasarán y autorizarán ésta en el duodécimo paso.</p></li>
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa-solid fa-upload text-primary fa-2x"></i></span><h5 class="fw-bold">Envío de la solicitud y evaluación por parte de la Fundación</h5><p class="text-muted">Una vez se reciban todas las autorizaciones, la solicitud se envia a La Fundación Rotaria para ser evaluada por el personal.</p></li>
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa-solid fa-building-columns text-primary fa-2x"></i></span><h5 class="fw-bold">Información de la cuenta bancaria</h5><p class="text-muted">Una vez que tu solicitud haya sido enviada a la Fundación para su revisión, se te pedirá proporcionar información sobre la cuenta bancaria que utilizarías para recibir los fondos de la subvención si la solicitud es aprobada. Ten en cuenta que se requiere la información de la cuenta bancaria para la aprobación de la subvención.</p></li>
+                                    </ul>
+                                </section>
+                                <p><b>REPASO Y BLOQUEO DE LA SOLICITUD</b></p>
+                                <section class="py-5 tline">
+                                    <ul class="timeline-with-icons">
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa fa-check text-primary fa-2x"></i></span><h5 class="fw-bold">Repaso</h5><p class="text-muted">Antes de enviar la solicitud a las personas que deberán autorizarla, es importante repasar detenidamente las respuestas proporcionadas para asegurarse de que la información esté completa y sea correcta. Para ello, te recomendamos imprimir la solicitud en formato PDF y repasar cada uno de los pasos.</p></li>
+                                        <li class="timeline-item mb-5"><span class="timeline-icon"><i class="fa fa-lock text-primary fa-2x"></i></span><h5 class="fw-bold">Bloqueo de la solicitud</h5><p class="text-muted">Al bloquear la solicitud, su estatus pasará de  Borrador a Pendiente de autorización y las personas encargadas de autorizarla no podrán modificarla. Los líderes de los clubes y distritos que deban autorizar la solicitud recibirán un correo electrónico solicitándoles que 10 hagan. Una vez se reciban todas las autorizaciones, la solicitud se envía a La Fundación Rotaria para que el personal proceda a evaluarla.</p><p class="text-muted">Si fuera necesario realizar algún cambio o corrección, los planificadores del proyecto o las personas encargadas de autorizar la solicitud deberán desbloquearla.</p></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <button type="button" disabled="" class="btn btn-secondary"><i class="fa-solid fa-lock"></i> Bloqueo de solicitud</button>
+                        </form>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseThree">
+                        Paso #12 Autorizaciones
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#formAccordion">
+                    <div class="accordion-body">
+
+
+                        <div>
+                            <h4>
+                                AUTORIZACIONES Y ACUERDOS LEGALES
+                            </h4>
+
+                            <p class="fw-bold">Autorización</p>
+                            <p>La autorización de la solicitud es el último paso que debe completarse antes de remitirla a La Fundación Rotaria. Repasa la información ingresada en cada paso y proporciona tu autorización más abajo. Dependiendo de tu función, es posible que debas autorizar la solicitud más de una vez.</p>
+                            <p>Cuando se bloqueó la solicitud en el paso previo, se enviaron correos electrónicos a los líderes de club o distrito que deben autorizarla. En este paso podrás ver quiénes dieron ya su autorización.</p>
+                            <p class="fw-bold">Autorización de contacto principal</p>
+
+
+                            <div>
+                                Acuerdo de Subvención Global: debe ser autorizado por los contactos principales y los presidentes de los clubes (o los presidentes de los DRFC si los patrocina el distrito) Este Acuerdo de Subvención Global (Acuerdo) es suscrito por La Fundación Rotaria de Rotary International (TRF) y los patrocinadores de la subvención (Patrocinadores). Al recibir esta Subvención Global de La Fundación Rotaria (Subvención) de LFR, los Patrocinadores acuerdan que: 
+                                <ul>
+                                    <li>1. Toda la información contenida en esta solicitud es, según nuestro conocimiento, verdadera y precisa.</li>
+                                    <br><li>2. Hemos leído los Términos y condiciones de las Subvenciones Globales de La Fundación Rotaria (Términos y condiciones) y cumpliremos con todas las normas allí establecidas.</li>
+                                    <br><li>3. Los Patrocinadores defenderán, indemnizarán y eximirán de toda responsabilidad a Rotary International (RI) y LFR, incluidos sus respectivos directores, fideicomisarios, funcionarios, miembros de comités, empleados, agentes, fundaciones asociadas y representantes (colectivamente, Rotary), de todas las reclamaciones , incluidos, entre otros, reclamos de subrogación, demandas, acciones, daños, pérdidas, costos, responsabilidades, gastos (incluidos los honorarios razonables de abogados y otros gastos legales), premios, sentencias y multas impuestas o recuperadas de Rotary que surjan de cualquier acto, conducta, omisión, negligencia, mala conducta o acto ilegal (o acto contrario a cualquier orden o regulación gubernamental aplicable) que resulte directa o indirectamente de la participación de un Patrocinador y/o participante en actividades financiadas por la subvención, incluidos todos los viajes relacionados con la subvención .</li>
+                                    <br><li>4. El incumplimiento de las partes de los términos de este Acuerdo debido a un caso fortuito, huelga, regulación gubernamental, guerra, incendio, disturbios, disturbios civiles, huracanes, terremotos u otros desastres naturales, actos de enemigos públicos, la restricción de las instalaciones de transporte, los levantamientos políticos, los desórdenes civiles, el brote de enfermedades o enfermedades infecciosas, los actos de terrorismo o cualquier causa similar fuera del control de las partes no se considerará un incumplimiento de este Acuerdo. En tal caso, el Acuerdo se considerará rescindido y los Patrocinadores reembolsarán a LFR todos los fondos de subvención global no gastados dentro de los 30 días posteriores a la rescisión.</li>
+                                    <br><li>5. La responsabilidad total de LFR se limita expresamente al pago del monto total de la financiación. TRF no asume ninguna responsabilidad adicional en relación con esta subvención.</li>
+                                    <br><li>6. TRF se reserva el derecho de cancelar la subvención y/o este Acuerdo sin previo aviso en caso de que uno o ambos Patrocinadores no cumplan con los términos establecidos en este Acuerdo y los Términos y Condiciones. Tras la cancelación, LFR tendrá derecho a un reembolso por parte de los patrocinadores de los fondos de la subvención global, incluidos los intereses devengados, que no se hayan gastado.</li>
+                                    <br><li>7. Las leyes del estado de Illinois, EE. UU., sin referencia a sus conflictos de principios legales, regirán todos los asuntos que surjan de este Acuerdo o estén relacionados con él, incluidos, entre otros, su interpretación, construcción, ejecución y cumplimiento.</li>
+                                    <br><li>8. Cualquier acción legal iniciada por cualquiera de las partes contra la otra parte que surja de este Acuerdo o se relacione con él debe presentarse en el Tribunal de Circuito del Condado de Cook, Estado de Illinois, EE. UU. o en el Tribunal de Distrito Federal del Distrito Norte de Illinois. , EE.UU. Cada parte acepta la jurisdicción exclusiva de estos tribunales y sus respectivos tribunales de apelación a los efectos de dichas acciones. Nada en este documento prohíbe que una parte que obtenga un fallo en cualquiera de los tribunales designados haga cumplir el fallo en cualquier otro tribunal. Sin perjuicio de lo anterior, TRF también puede emprender acciones legales contra los Patrocinadores y/o las personas que viajen con fondos de la subvención en cualquier tribunal con jurisdicción sobre ellos.</li>
+                                    <br><li>9. Este Acuerdo vincula y beneficia a las partes y sus respectivos administradores, representantes legales y sucesores y cesionarios permitidos.</li>
+                                    <br><li>10. Si se determina que alguna disposición de este Acuerdo es ilegal, inválida o inaplicable, las disposiciones restantes de este Acuerdo permanecerán en pleno vigor y efecto.</li>
+                                    <br><li>11. Los patrocinadores no pueden ceder ninguno de sus derechos bajo este Acuerdo excepto con el consentimiento previo por escrito de TRF. Los patrocinadores no pueden delegar ningún desempeño bajo este Acuerdo sin el consentimiento previo por escrito de TRF. Cualquier supuesta cesión de los derechos de un Patrocinador o delegación de desempeño sin el consentimiento previo por escrito de TRF es nula.</li>
+                                    <br><li>12. LFR puede ceder algunos o todos sus derechos bajo este Acuerdo a una fundación asociada de LFR. LFR puede delegar cualquier desempeño bajo este Acuerdo a una fundación asociada. Cualquier otra supuesta cesión de los derechos de TRF o delegación de desempeño sin el consentimiento previo por escrito de los Patrocinadores es nula.</li>
+                                    <br><li>13. Los patrocinadores cumplirán con todas las sanciones económicas y comerciales, incluidas las implementadas por la Oficina de Control de Activos Extranjeros (OFAC) del Departamento del Tesoro de los Estados Unidos, y se asegurarán de no apoyar o promover violencia, actividades terroristas .</li>
+                                    <br><li>14. Este Acuerdo constituye el acuerdo final entre las partes. Ninguna enmienda o renuncia a cualquier disposición de este Acuerdo será efectiva a menos que sea en forma de un escrito firmado por las partes.</li>
+                                    <br><li>15. Rotary puede utilizar la información contenida en esta solicitud y los informes posteriores con fines promocionales, como en la revista de Rotary, en Rotary Leader, en rotary.org y en las redes sociales. Para todas y cada una de las fotografías enviadas con cualquier solicitud o informe de seguimiento, el Patrocinador otorga a Rotary un derecho y una licencia ilimitados, perpetuos y mundiales para usar, modificar, adaptar, publicar y distribuir la(s) fotografía(s) en cualquier medio ahora conocido o ideado en el futuro, incluidos, entre otros, en las publicaciones, los anuncios y los sitios web de Rotary y en los canales de las redes sociales. El Patrocinador declara y garantiza que (a) cada adulto que aparece en la(s) fotografía(s) ha dado su consentimiento por escrito sin restricciones al Patrocinador para fotografiarlos y usar y licenciar su semejanza, incluida la licencia de la(s) fotografía(s) para terceros, (b) el padre o tutor de cada niño menor de 18 años o cada persona que carece de capacidad legal que aparece en la(s) fotografía(s) ha dado su consentimiento por escrito sin restricciones al Patrocinador para fotografiar al niño o individuo y usar y licenciar su semejanzas, incluida la concesión de licencias de la(s) fotografía(s) a terceros, y (c) es el propietario de los derechos de autor de la(s) fotografía(s) o que el propietario de los derechos de autor de la(s) fotografía(s) le ha otorgado al Patrocinador el derecho de licenciar o sublicenciar la(s) fotografía(s) fotografía(s) a Rotary.</li>
+                                    <br><li>16. La privacidad es importante para Rotary y cualquier dato personal que el Patrocinador comparta con Rotary solo se utilizará para asuntos oficiales de Rotary. El patrocinador debe minimizar los datos personales de los beneficiarios de la subvención que comparte con TRF a solo los datos personales que TRF solicita específicamente. Los datos personales que se comparten con TRF se utilizarán para permitir la participación del Patrocinador en este proceso de Subvención, para facilitar la experiencia de la Subvención del Patrocinador y para fines informativos. Los datos personales proporcionados a LFR pueden transferirse a los proveedores de servicios de Rotary (por ejemplo, entidades afiliadas) para ayudar a Rotary a planificar actividades relacionadas con las subvenciones. Al solicitar una beca, el Patrocinador podrá recibir información sobre la Beca y servicios complementarios a través de correo electrónico. Para obtener más información sobre cómo utiliza Rotary los datos personales, comuníquese con privacy@rotary.org. Los datos personales proporcionados a TRF o recopilados en este formulario están sujetos a la Política de privacidad de Rotary.</li>
+                                    <br><li>17. Los patrocinadores aceptan compartir información sobre las mejores prácticas cuando se les solicite, y LFR puede proporcionar su información de contacto a otros rotarios que deseen recibir asesoramiento sobre la implementación de actividades similares.</li>
+                                    <br><li>18. Los Patrocinadores se asegurarán de que todas las personas que viajen con fondos de la subvención hayan sido informadas de las políticas de viaje establecidas en los Términos y Condiciones y se les haya hecho saber que son responsables de obtener un seguro de viaje.</li>
+                                    <br><li>19. A nuestro leal saber y entender, todas las relaciones entre los miembros del comité de subvenciones, los funcionarios del distrito y otros miembros de los clubes o distritos patrocinadores y los beneficiarios de becas, organizaciones colaboradoras, proveedores de proyectos u otras personas u organizaciones que se beneficiarán de la subvención se han divulgado en esta solicitud. Salvo que se indique lo contrario en este documento, ni nosotros ni ninguna persona con la que tengamos o hayamos tenido una relación personal o comercial nos beneficiaremos o pretendemos beneficiarnos de los fondos de la subvención de La Fundación Rotaria ni tenemos ningún interés que pueda representar un posible conflicto de intereses. Un conflicto de intereses ocurre cuando alguien está en una posición para tomar o influir en una decisión sobre una subvención o beca que podría beneficiarlo a él, a su familia, a su negocio o a una entidad en la que se desempeña en un puesto de liderazgo o asesoramiento remunerado o voluntario.</li>
+                                </ul>
+                            </div>
+                        <div>
+                            <h6>Autorización de contacto principal</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Club</th>
+                                        <th scope="col">Distrito</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="my-4">
+                            <h6>Permiso del presidente del comité distrital de la Fundación Rotaria</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Club</th>
+                                        <th scope="col">Distrito</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="my-4">
+                            <h6>Autorizacion para el uso de FDD</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Club</th>
+                                        <th scope="col">Distrito</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="my-4">
+                            <h6>Acuerdo Legal</h6>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Club</th>
+                                        <th scope="col">Distrito</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        </div>
+
+                        <div class="savebuttons d-flex justify-content-start gap-3 mt-4">
+                            <button class="btn btn-primary" type="submit">Guardar y continuar</button>
+                            <button class="btn btn-outline-primary" type="submit">Guardar</button>
+                            <a class="btn btn-link" href="#">Salir</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Final de los bloques -->
+
+
+
+        </div>
+
+        <div class="step-indicator">
+            <strong>Paso actual:</strong> <span id="currentStep">1</span>
+        </div>
+    </div>
+</div>

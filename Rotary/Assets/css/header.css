@@ -1,0 +1,118 @@
+:root {
+    --FirstColor: #0C3266;
+    --SecondBlue: #0C3C7C;
+    --ThirdBlue: #19519C;
+    --LightBlue: #4994EC;
+    --TextColorLight: #F2F2F2; 
+}
+
+.first-line{
+    background-color: var(--FirstColor);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.secondary-opt{
+    padding: 1em;
+}
+
+.d-flex{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.listHeader {
+    background-color: var(--FirstColor);
+    color: var(--TextColorLight); 
+}
+
+.listHeader a {
+    color: var(--TextColorLight);
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--SecondBlue);
+    color: var(--TextColorLight);
+    padding: 0;
+    padding-top: 0 !important;
+}
+
+.navbar a {
+    color: var(--TextColorLight);
+    text-decoration: none;
+}
+
+.navbar .btn {
+    color: var(--TextColorLight);
+    background-color: var(--ThirdBlue);
+}
+
+.navbar .btn:hover {
+    background-color: var(--LightBlue);
+    color: var(--TextColorLight);
+}
+
+.navbar-toggler {
+    background-color: var(--LightBlue); 
+    color: var(--TextColorLight);
+}
+
+.navbar .material-symbols-outlined {
+    font-size: 24px;
+    color: var(--TextColorLight);
+    cursor: pointer;
+}
+
+
+.navbar .navbar-collapse {
+    background-color: var(--SecondBlue);
+    color: var(--TextColorLight);
+}
+
+.navbar .navbar-collapse .nav-link {
+    color: var(--TextColorLight);
+}
+
+.nav-link{
+    color: var(--TextColorLight);
+}
+
+header .navbar { 
+    background-color: var(--SecondBlue) !important; 
+    color: var(--TextColorLight) !important;
+}
+
+header .navbar a { 
+    color: var(--TextColorLight) !important;
+}
+
+header .btn { 
+    background-color: var(--ThirdBlue) !important;
+    border-radius: 2pt;
+    width: 6vw;
+    padding: 1em;
+    border: 0;
+    font-weight: 600;
+    text-transform: none  !important;
+}
+
+@media (max-width: 992px) {
+    .btn-header{
+        width: 100% !important;
+    }
+
+    .navbar-nav{
+        padding-left: 10%;
+    }
+
+    .d-flex{
+        margin-top: 5%;
+    }
+
+}
